@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  min-height: 100%;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+h1{
+    font-size: 1rem;
+    color: hsl(0, 0%, 81%);
+}
+h2{
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+h3{
+    font-size: 1.3rem;
+    color: hsl(210, 46%, 95%);
+    margin-bottom: 1rem;
+}
+
+p{
+    color:hsl(210, 46%, 95%);
+    opacity: 50%;
+    font-size: 1rem;
+}
+.container {
+    display: flex;
+  /* min-height: 100%;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto; */
+  }
+.grid-box{
+    display: grid;
+    max-width: 100%;
+    /* max-height: 20rem; */
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+.item1 {
+    background-color: var(--Moderate-violet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: right 10% top;
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+
+.item2{
+    background-color: var(--Very-dark-grayish-blue);
+    grid-column: 3;
+    grid-row: 1;
+}
+.item3{
+    background-color: var(--White);
+}
+
+.item4{
+    background-color: var(--Very-dark-blackish-blue);
+    grid-column: 2/span 2;
+    grid-row: 2;
+}
+
+.item5{
+    background-color: var(--White);
+    grid-column: 4;
+    grid-row: 1/span 2;
+    
+}
+.item5 h3{
+    color: hsl(217, 19%, 35%);
+}
+.item5 p{
+    color: hsl(217, 19%, 35%);
+    opacity: 70%;
+}
+.item3 h3{
+    color: hsl(217, 19%, 35%);
+}
+.item3 p{
+    color: hsl(217, 19%, 35%);
+    opacity: 70%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-shadow: 10px 15px 25px rgba(201, 196, 196, 0.25);
+    border-radius: 0.5rem;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.avatar img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
